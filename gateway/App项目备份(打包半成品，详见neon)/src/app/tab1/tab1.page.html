@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      设备信息
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div *ngFor='let info of allInfos;' style=text-align:center>
+    <ion-card
+      *ngIf="info.type!='Temp' && info.type!='Humd' && info.type!='Smoke' && info.type!='NH3' && info.type!='H2S'">
+      <ion-card-header>
+        <ion-card-title>ID：{{info.id}}</ion-card-title>
+        <img src="{{deviceIcon((info.type),(info.value))}}">
+      </ion-card-header>
+      <ion-card-content>
+        <p class="card-text"><small class="text-muted">位置：{{info.build}}{{info.floor}}</small></p>
+        <br>
+        <ion-button color="success" (click)="turnOn(info)">打开</ion-button>
+        <ion-button color="secondary" (click)="turnOff(info)">关闭</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

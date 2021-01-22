@@ -1,0 +1,33 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">设备信息</h1>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-group mr-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+        </div>
+        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            This week
+        </button>
+    </div>
+</div>
+
+<div class="my-3 p-3 bg-white rounded shadow-sm div">
+    <div class="row">
+        <div *ngFor='let info of allInfos;'>
+            <div class="card text-center"
+                *ngIf="info.type!='Temp' && info.type!='Humd' && info.type!='Smoke' && info.type!='NH3' && info.type!='H2S'">
+                <div class="card-header">ID号：{{info.id}}</div>
+                <p class="card-title">value：{{info.value}}</p>
+                <img src="{{deviceIcon((info.type),(info.value))}}">
+                <div class="card-body">
+                    <p class="card-text"><small class="text-muted">位置：{{info.build}}{{info.floor}}</small></p>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success" (click)="turnOn(info)">打开</button>
+                        <button type="button" class="btn btn-secondary" (click)="turnOff(info)">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

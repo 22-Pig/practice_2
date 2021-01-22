@@ -1,0 +1,190 @@
+<div style="text-align: center;width: 100%;">
+    <br>
+    <h1>大机电A01智慧厕所</h1>
+</div>
+<div class="row mb-2 justify-content-center">
+    <div class="col-auto">
+        <div class="my-3 p-3 bg-white rounded shadow-sm">
+            <div class="main" style="position: relative;">
+                <div>
+                    <div *ngIf="sprinkler_A_1_m2 == 0">
+                        <img src="/assets/img/green.png" style="position: absolute; left: 104px; top:132px;">
+                    </div>
+                    <div *ngIf="sprinkler_A_1_m2 == 1">
+                        <img src="/assets/img/yellow.png" style="position: absolute; left: 104px; top:132px;">
+                    </div>
+                </div>
+                <div>
+                    <div *ngIf="sprinkler_A_1_m1 == 0">
+                        <img src="/assets/img/green.png" style="position: absolute; left: 104px; top:292px;">
+                    </div>
+                    <div *ngIf="sprinkler_A_1_m1 == 1">
+                        <img src="/assets/img/yellow.png" style="position: absolute; left: 104px; top:292px;">
+                    </div>
+                </div>
+                <!-- 以上为最左侧的两个灯 -->
+                <div>
+                    <div *ngIf="infrared_A_1_m1 == 0">
+                        <img src="/assets/img/green.png" style="position: absolute; left: 256px; top:570px;">
+                    </div>
+                    <div *ngIf="infrared_A_1_m1 == 1">
+                        <img src="/assets/img/yellow.png" style="position: absolute; left: 256px; top:570px;">
+                    </div>
+                </div>
+                <div>
+                    <div *ngIf="infrared_A_1_m2 == 0">
+                        <img src="/assets/img/green.png" style="position: absolute; left: 407px; top:570px;">
+                    </div>
+                    <div *ngIf="infrared_A_1_m2 == 1">
+                        <img src="/assets/img/yellow.png" style="position: absolute; left: 407px; top:570px;">
+                    </div>
+                </div>
+                <!-- 以上为左下方的两个椭圆 -->
+                <div>
+                    <div *ngIf="warininglight_A_1_m2 == 0">
+                        <img src="/assets/img/green.png" style="position: absolute; left: 342px; top:150px;">
+                    </div>
+                    <div *ngIf="warininglight_A_1_m2 == 1">
+                        <img src="/assets/img/yellow.png" style="position: absolute; left: 342px; top:150px;">
+                    </div>
+                </div>
+                <div>
+                    <div *ngIf="warininglight_A_1_m1 == 0">
+                        <img src="/assets/img/green.png" style="position: absolute; left: 342px; top:305px;">
+                    </div>
+                    <div *ngIf="warininglight_A_1_m1 == 1">
+                        <img src="/assets/img/yellow.png" style="position: absolute; left: 342px; top:305px;">
+                    </div>
+                </div>
+                <!-- 以上为左侧的门 -->
+                <div>
+                    <div *ngIf="fan_A_1_m == 0">
+                        <img src="/assets/img/blue.png" style="position: absolute; left: 432px; top:92px;">
+                    </div>
+                    <div *ngIf="fan_A_1_m == 1">
+                        <img src="/assets/img/red.png" style="position: absolute; left: 432px; top:92px;">
+                    </div>
+                </div>
+                <div>
+                    <div *ngIf="fan_A_1_w == 0">
+                        <img src="/assets/img/blue.png" style="position: absolute; left: 1005px; top:96px;">
+                    </div>
+                    <div *ngIf="fan_A_1_w == 1">
+                        <img src="/assets/img/red.png" style="position: absolute; left: 1005px; top:96px;">
+                    </div>
+                </div>
+                <!-- 以上为中间的两个排气扇 -->
+                <div>
+                    <div *ngIf="window_A_1_m == 0">
+                        <img src="/assets/img/blue.png" style="position: absolute; left: 55px; top:490px;">
+                    </div>
+                    <div *ngIf="window_A_1_m == 1">
+                        <img src="/assets/img/red.png" style="position: absolute; left: 55px; top:490px;">
+                    </div>
+                </div>
+                <div>
+                    <div *ngIf="window_A_1_w == 0">
+                        <img src="/assets/img/blue.png" style="position: absolute; left: 1355px; top:528px;">
+                    </div>
+                    <div *ngIf="window_A_1_w == 1">
+                        <img src="/assets/img/red.png" style="position: absolute; left: 1355px; top:528px;">
+                    </div>
+                </div>
+                <!-- 以上为两侧的窗户 -->
+                <div>
+                    <div *ngIf="sprinkler_A_1_w2 == 0">
+                        <img src="/assets/img/green.png" style="position: absolute; left: 1290px; top:132px;">
+                    </div>
+                    <div *ngIf="sprinkler_A_1_w2 == 1">
+                        <img src="/assets/img/yellow.png" style="position: absolute; left: 1290px; top:132px;">
+                    </div>
+                </div>
+                <div>
+                    <div *ngIf="sprinkler_A_1_w1 == 0">
+                        <img src="/assets/img/green.png" style="position: absolute; left: 1276px; top:334px;">
+                    </div>
+                    <div *ngIf="sprinkler_A_1_w1 == 1">
+                        <img src="/assets/img/yellow.png" style="position: absolute; left: 1276px; top:334px;">
+                    </div>
+                </div>
+                <!-- 以上为最右侧的两个灯 -->
+                <div>
+                    <div *ngIf="warininglight_A_1_w2 == 0">
+                        <img src="/assets/img/green.png" style="position: absolute; left: 1041px; top:141px;">
+                    </div>
+                    <div *ngIf="warininglight_A_1_w2 == 1">
+                        <img src="/assets/img/yellow.png" style="position: absolute; left: 1041px; top:141px;">
+                    </div>
+                </div>
+                <div>
+                    <div *ngIf="warininglight_A_1_w1 == 0">
+                        <img src="/assets/img/green.png" style="position: absolute; left: 1041px; top:325px;">
+                    </div>
+                    <div *ngIf="warininglight_A_1_w1 == 1">
+                        <img src="/assets/img/yellow.png" style="position: absolute; left: 1041px; top:325px;">
+                    </div>
+                </div>
+                <!-- 以上为右侧的门 -->
+            </div>
+        </div>
+    </div>
+    <div class="col-auto">
+        <div class="col my-3 p-3 bg-white rounded shadow-sm">
+            <h3 id="time" style="width: 20rem;text-align: center;"></h3>
+        </div>
+        <!-- <div class="w-100"></div> -->
+        <div class="my-3 p-3 bg-white rounded shadow-sm" style="text-align: center;width: 100%;">
+            <!-- <button type="button" class="btn btn-success" (click)="test()">测试</button> -->
+            <h3>示例设备：LED_101</h3>
+            <br>
+            <div>
+                <div *ngIf="ledValue == 0">
+                    <img src="/assets/img/led0.png" alt="" style="width: 7rem;height: 10rem;">
+                </div>
+                <div *ngIf="ledValue == 1">
+                    <img src="/assets/img/led1.png" alt="" style="width: 7rem;height: 10rem;">
+                </div>
+            </div>
+            <br>
+            <div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-success" (click)="turnOn('led_101')">打开</button>
+                    <button type="button" class="btn btn-secondary" (click)="turnOff('led_101')">关闭</button>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 p-3 bg-white rounded shadow-sm" style="text-align: center;width: 100%;">
+            <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action bg-success active"
+                    style="border:none">
+                    卫生间内各项数据
+                </button>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        温度
+                        <span class="badge badge-warning badge-pill">{{tem_A_1_m}}℃</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        湿度
+                        <span class="badge badge-primary badge-pill">{{hum_A_1_m}}%RH</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        氨气浓度
+                        <span class="badge badge-secondary badge-pill">{{NH3_A_1_m}}ppm</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        硫化氢浓度
+                        <span class="badge badge-secondary badge-pill">{{H2S_A_1_m}}ppm</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        PM2.5
+                        <span class="badge badge-secondary badge-pill">{{smoke_A_1_m}}μm</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="d-flex justify-content-center">
+        <img src="{{led.status == 1?'/assets/img/led1.png':'/assets/img/led0.png'}}">
+    </div> -->

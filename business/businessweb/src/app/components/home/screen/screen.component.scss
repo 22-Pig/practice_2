@@ -1,0 +1,19 @@
+/* img来插入绿色圆圈图标，设置大小 */
+img{
+    width: 40px;
+    height: 40px;
+}
+
+.main{
+    // display: table-cell;
+    padding: 10px;
+    margin: 10px;
+    width: calc(100vw - 38em);
+    height: calc(100vh - 20em);
+    border: 1px solid green;
+    background: url("../../../../assets/img/home.png");
+}
+
+
+
+
